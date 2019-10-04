@@ -1,0 +1,3 @@
+For this code to work, you need to be logged into Azure with az cli (which needs to be installed...)
+
+do az login prior to starting the script
