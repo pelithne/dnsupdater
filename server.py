@@ -25,6 +25,7 @@ class User(Resource):
 
     def delete(self, name):
         # TDB
+        return
 
 api.add_resource(User, "/user/<string:name>")
 
