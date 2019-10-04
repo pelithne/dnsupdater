@@ -1,4 +1,8 @@
-For this code to work, you need to be logged into Azure with az cli (which needs to be installed by e.g. using  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash)
+## dnsupdater
+
+dnsupdater updates a given *private* DNS zone in Azure
+
+For the code to work, you need to be logged into Azure with az cli (which needs to be installed by e.g. using  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash)
 
 do az login prior to starting the script
 
