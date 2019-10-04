@@ -14,14 +14,18 @@ users = [
     }
 ]
 
+dnszone = "dns.ptspoc"
+resourcegroup = "PTS-PoC"
+
 class User(Resource):
     def post(self, name):
-        print(request.remote_addr)
+        print("\n")
+        print("Attempting to add DNS A record for "+name +" and IP " +request.remote_addr)
 
         parser = reqparse.RequestParser()
         args = parser.parse_args()
 
-        req = 'az network private-dns record-set a add-record -g PTS-PoC -z dns.ptspoc '+'-a '+request.remote_addr +' -n ' +name
+        req = 'az network private-dns record-set a add-record -g ' +resourcegroup +' -z ' +dnszone +' -a ' +request.remote_addr +' -n ' +name
         os.system(req)
 
         return name, 201
