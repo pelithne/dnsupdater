@@ -11,6 +11,9 @@ do az login prior to starting the script
 * Pip: sudo apt install python-pip
 * flask-restful:  pip install flask-restful
 
+Finally, you need to edit the script to mach your resource-group and dns-zone
+
+
 Run the script with:
 
 **python server.py**
