@@ -16,4 +16,4 @@ Finally, you need to edit the script to mach your resource-group and dns-zone
 
 Run the script with:
 
-**python server.py**
+**python dnsupdater.py**
